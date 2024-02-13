@@ -14,8 +14,12 @@ model User {
   id            Int         @id @default(autoincrement())
   username      String      @db.VarChar(30)
   password      String      @db.VarChar(72)
-  email         String?
-  todos         Todo[]                 
+  email         String?     @db.VarChar(30)  
+  first_name    String?     @db.VarChar(30)
+  last_name     String?     @db.VarChar(30)
+  address       String?     @db.VarChar(30)
+  phone         String?     @db.VarChar(30)  
+  todos         Todo[]   
 }
 
 model Todo{

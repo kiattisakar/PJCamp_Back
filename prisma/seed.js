@@ -7,7 +7,16 @@ const password = bcrypt.hashSync('123456')
 const userData = [
     { username : 'andy', password , email: 'andy@gmail.com'},
     { username : 'bob', password , email: 'bob@gmail.com'},
-    { username : 'can', password , email: 'can@gmail.com'}
+    { username : 'can', password , email: 'can@gmail.com'},
+    {
+        username: 'jin',
+        password,
+        email: 'jin@gmail.com',
+        first_name: 'ChontiCha',
+        last_name: 'Watida',
+        phone: '097372423',
+        address: '255/14 Udon'
+    }
 ]
 
 const todoData = [
